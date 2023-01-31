@@ -1,0 +1,170 @@
+/* --------------------
+-----------------------
+------------Навигация 
+-----------------------*/
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 88px;
+    max-width: 100%;
+    background-color: white;
+    margin: 0;
+    padding-left: 10px;
+  }
+  .logo {
+    position: relative;
+    display: block;
+    background: url("../img/Logo.svg");
+    width: 96px;
+    height: 50px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    white-space: nowrap;
+    vertical-align: middle;
+    z-index: 100;
+  }
+  
+  .navigation__burger {
+    border: none;
+    background: none;
+    background: url("../img/burger.svg") no-repeat center;
+    order: -1;
+  }
+  .navigation__call-icon {
+    background: url("../img/call.svg") no-repeat center;
+  }
+  .navigation__chat-icon {
+    background: url("../img/chat.svg") no-repeat center;
+  
+  }
+  .navigation__profile-icon {
+    background: url("../img/profile.svg") no-repeat center;
+  
+  }
+  .navigation__request {
+    background: url("../img/repair.svg") no-repeat 0 0;
+    position: relative;
+  }
+  .navigation__request::before {
+    content: "";
+    position: absolute;
+    border-left: 2px solid #EAEAEA;
+    height: 32px;
+    width: 1px;
+    left: -50%;
+    top: 5px;
+  }
+  
+  .navigation__status{
+    background: url("../img/checkstatus.svg") no-repeat center;
+  }
+  .icon > span {
+    display: none;
+  }
+  @media (min-width: 300px) and (max-width: 767px) {
+    .logo{
+        margin-right: 10%;
+    }
+    .navigation__call-icon, 
+    .navigation__chat-icon, 
+    .navigation__profile-icon {
+        display: none;
+    }
+  } 
+  @media (min-width: 768px) {
+    .logo{
+        margin-right: 30%;
+    }
+    .logo::before {
+        content: "";
+        position: absolute;
+        border-left: 2px solid #EAEAEA;
+        height: 32px;
+        width: 1px;
+        left: -20%;
+        top: 10px;
+    }}
+    @media (min-width: 1760px) {
+        .logo,
+        .navigation__burger,
+        .navigation__call-icon,
+        .navigation__chat-icon,
+        .navigation__profile-icon{
+            display: none;
+        }
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        main {
+            margin-top: -88px;
+            padding-left: 34px;
+        }
+        h1{
+            margin-bottom: 40px;
+        }
+        h1::before {
+            left: -34px;
+      
+        }
+        .navigation__request::before {
+            display: none;
+        }
+        .navigation {
+            justify-content: space-evenly;
+            padding-left: 50%;
+            background-color: #F8F8F8;
+        }
+        .sidebar {
+            margin-bottom: 42px;
+            overflow: visible;
+            display: flex;
+            width: 1000px;
+            flex-wrap: wrap;
+        }
+        .sidebar:first-child, .about:last-child{
+            padding-left: 0;
+        }
+        .about {
+            align-items: center;
+            width: 650px;
+            height: 40vh;
+        }
+       
+        .about__text {
+            width: 500px;
+            position: relative;
+            height: auto;
+            
+        }
+        .about-flex{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1120px;
+            
+        }
+        .icon > span {
+            display: inline-block;
+            left: 50px;
+            position: relative;
+            top: 10px;
+        }
+        .image__file {
+            width: 531px;
+      
+        }
+        .about__text {
+            margin-right: 36px;
+            height: 4.5em;
+        }
+        label {
+            top: 0;
+        }
+       .sidebar__item {
+        margin: 0;
+       }
+    }

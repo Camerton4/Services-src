@@ -1,0 +1,171 @@
+.mobile-menu {
+    width: 320px;
+    height: 100%;
+    background-color: white; 
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+.menu-header {
+    height: 88px;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+
+}
+.icon:active{
+    opacity: 0.7;
+}
+.icon-back {
+    background: url(../img/burger-close.svg);
+}
+.logo-menu {
+    background: url(../img/Logo.svg);
+    width: 97px;
+    height: 51px;
+    margin-right: 40px;
+}
+.search-icon {
+    background: url(../img/search.svg);
+}
+.icon-back:active, .icon-back:focus{
+   
+    transform: rotate(90deg);
+    transition-duration: 1.5s;
+}
+
+.menu {
+    padding: 0;
+    padding-left: 24px;
+}
+.menu__item {
+    list-style: none;
+    margin-bottom: 32px;
+}
+.menu__item > a {
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: medium;
+    color: black;
+}
+a:active {
+    color: black;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu__item > a:hover, .menu__item > a:focus {
+opacity: 0.5;
+color: black;
+outline: none;
+transition-duration: 0.5s;
+
+} 
+.menu__item > a:hover::before, .menu__item > a:focus::before  {
+    content: "";
+    outline: none;
+    opacity: 1;
+    position: relative;
+    left: -24px;
+    border-left: 3px solid #41F6D7;
+}
+.contacts {
+    margin-left: 24px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 124px;
+    width: 200px;
+}
+.phone {
+    background: url(../img/call.svg) no-repeat center;
+}
+.message {
+    background: url(../img/chat.svg);
+}
+.profile {
+    background: url(../img/profile.svg);
+    margin-bottom: 16px;
+}
+.email {
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-weight: medium;
+    color: black;
+}
+.tel {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+.lung > a {
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+}
+.lung > a:hover, .lung > a:focus {
+    opacity: 0.5;
+    color: black;
+    outline: none;
+    transition-duration: 0.5s;
+    border: 2px solid gray;
+    } 
+
+    @media (min-width: 320px) {
+        .menu {
+            margin-bottom: 32px;
+        }
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: 0.5s;
+        }
+    }
+    @media (min-width: 360px) and (max-width: 435px){
+        .mobile-menu {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 768px)  {
+        .menu {
+            margin-bottom: 268px;
+        }
+        .mobile-menu {
+            width: 320px;
+            transform: translateX(-100%);
+        }
+    }
+
+
+    @media (min-width: 1760px) {
+        .menu {
+            margin-bottom: 241px;
+        }
+        .icon-back {
+            display: none;
+        }
+        .mobile-menu {
+            display: block;
+            transform: translateX(0);
+            transition: 1.5s;
+        }
+
+    }
+    .visible {
+        display: block;
+        transform: translateX(0);
+        transition: 1.5s;
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    }

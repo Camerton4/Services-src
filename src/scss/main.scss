@@ -1,0 +1,266 @@
+/* --------------------
+-----------------------
+------------главная 
+-----------------------*/
+main {
+    background-color: #F8F8F8;
+    min-height: 100vh; 
+    padding: 24px;
+    padding-bottom: 0;
+  }
+  h1 {
+    margin: 0;
+    position: relative; 
+    margin-bottom: 24px;
+  
+  }
+  h1::before {
+    content: "";
+    border-left: 3px solid #41F6D7;
+    position: absolute;
+    height: 100%;
+    left: -24px;
+  }
+  .sidebar {
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .image__file {
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    position: relative;
+  }
+
+/* --------------------
+-----------------------
+------------sidebar 
+-----------------------*/
+.sidebar {
+    display: flex;
+    height: 70px;
+    overflow: scroll;
+    padding: 0 0; 
+    font-size: 16px;
+    margin: 0 6px;
+    scrollbar-width: none;
+  }
+  
+  .sidebar__item {
+    width: auto;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #7E7E82;
+    margin: 0 auto;
+    margin-right: 9px;
+    padding: 10px;
+    text-align: center;
+    font-weight: medium;
+    align-self: center;
+  }
+  
+  .sidebar__item:focus, 
+  .sidebar__item:active {
+    border: solid 2px #B8FFEC;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    
+  }
+  
+  .sidebar::-webkit-scrollbar {
+    width: 0;
+    scrollbar-width: none;
+  }
+  
+  /* --------------------
+  -----------------------
+  ------------Text etc 
+  -----------------------*/
+  .about {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 24px;
+    margin-bottom: 16px;
+  }
+  
+  
+  .about__button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 0;
+    margin: 0;
+    top: -1;
+    left: -1;
+    position: absolute;
+  }
+  
+  .about__text {
+    display: block;
+    margin-top: 0;
+    height: 6em;
+    overflow: hidden;
+    justify-self: start;
+    line-height: 1.6;
+    
+  }
+  .about__button:checked ~ .about__text {
+    height: auto;
+    transition: 0.3s;
+  } 
+  .about__button:focus ~ label {
+    border: #41F6D7 solid 2px;
+  }
+  .checkbox-text {
+    position: relative;
+    height: 24px;
+    width: 110px;
+    right: -20px;
+  }
+  .checkbox-text::before {
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    background: url("../img/arrow.svg");
+    left: -32px;
+    top: -2px;
+    transition-duration: 1s;
+  }
+  .about__button:checked ~ .checkbox-text::before {
+    transform: rotate(180deg);
+  }
+  .discription__text {
+    display: inline-block;
+    font-size: 14px;
+    width: 70%;
+    margin-bottom: 8px;
+
+  }
+
+  .discription__link {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    span {
+      color: #FF3E79;
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 400px){
+    .discription__link {
+      
+      span {
+        color: #FF3E79;
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .br {
+      display: none;
+    }
+    .checkbox-text {
+        top: 0px;
+    }
+    .about-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+  
+    .image__file {
+        width: 50vw;
+    }
+    .about {
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .about__text {
+        height: 6.6em;
+        display: block;
+    }
+  }
+  @media (min-width: 1760px) {
+    .container {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    main {
+        margin-top: -88px;
+        padding-left: 34px;
+    }
+    h1{
+        margin-bottom: 40px;
+    }
+    h1::before {
+        left: -34px;
+  
+    }
+    .navigation__request::before {
+        display: none;
+    }
+    .navigation {
+        justify-content: space-evenly;
+        padding-left: 50%;
+    }
+    .sidebar {
+        margin-bottom: 42px;
+        overflow: visible;
+        display: flex;
+        width: 1000px;
+        flex-wrap: wrap;
+    }
+    .sidebar:first-child, .about:last-child{
+        padding-left: 0;
+    }
+    .about {
+        align-items: center;
+        width: 650px;
+        height: 28vh;
+    }
+   
+    .about__text {
+        width: 500px;
+        position: relative;
+        height: auto;
+        
+    }
+    .about-flex{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1120px;
+        height: auto;
+    }
+    .icon > span {
+        display: inline-block;
+        left: 50px;
+        position: relative;
+        top: 10px;
+    }
+    .image__file {
+        width: 531px;
+  
+    }
+    .about__text {
+        margin-right: 24px;
+        height: 4.5em;
+    }
+    .checkbox-text {
+        top: 0;
+    }
+  
+   .sidebar__item {
+    margin: 0;
+   }
+  } 
+
+.icon:hover, .icon:focus,
+.price__button:hover, .price__button:focus {
+  transform: scale(1.1);
+  transition: 300ms;
+}

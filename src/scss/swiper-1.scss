@@ -1,0 +1,224 @@
+.header_swiper {
+    background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+}
+.h2-block {
+    display: inherit;
+   width: auto;
+   position: relative;
+   margin: 0 auto;
+   margin-bottom: 16px;
+}
+.header__title_swiper {
+    display: inline-block;
+    width: inherit;
+    font-size: 16px;
+    color: #7E7E82;
+    font-weight: normal;
+    margin: 0;
+    padding: 16px 0 16px 0;
+    margin-bottom: 2px;
+    opacity: 0.7;
+}
+.slider-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    top: -10px;
+    margin: 0 auto;
+}
+.swiper {
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+}
+.swiper-wraper-1 {
+    display: flex;
+    min-width: 0; 
+    padding-left: 2px;
+
+}
+
+.card {
+    background-color: white;
+    height: 72px;
+    width: 240px;
+    display: block;
+    border-radius: 6px;
+}
+
+.card__link {
+    position: relative;
+    display: block;
+    background-color: white;
+    
+}
+.card__link::after {
+    content: '';
+    background: url(../img/go.svg) no-repeat 184px 50%;
+    width: 240px;
+    height: 72px;
+    display: block;
+
+}
+.swiper-pagination {
+    position: static;
+    margin-top: 16px;
+}
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+
+}
+.card__link--lenovo {
+    background: url(../img/Lenovo.svg) no-repeat 16px 50%;
+}
+.card__link--samsung {
+    background: url(../img/Samsung.svg) no-repeat 16px 50%;
+}
+.card__link--apple {
+    background: url(../img/Apple.svg) no-repeat 16px 50%;
+}
+.card__link--bosch {
+    background: url(../img/Bocsh.svg) no-repeat 16px 50%;
+}
+.card__link--hp {
+    background: url(../img/HP.svg) no-repeat 16px 50%;
+}
+.card__link--acer {
+    background: url(../img/Acer.svg) no-repeat 16px 50%;
+}
+.card__link--sony {
+    background: url(../img/Sony.svg) no-repeat 16px 50%;
+}
+.card__link--viewsonic {
+    background: url(../img/Samsung.png) no-repeat 16px 50%;
+}
+
+
+.remove {
+    display: none;
+}
+.button-cont {
+    height: 24px;
+    position: relative;
+}
+.sw_arrow1 {
+    background: url(../img/arrow.svg) no-repeat 0 50%;
+    height: 24px;
+    width: 24px;
+    display: block;
+    position: absolute;
+    transform: rotate(0deg);
+    transition-duration: 0.5s;
+}
+.sw_arrow1_reverse {
+    transform: rotate(180deg);
+}
+
+.swiper_button-1 {
+    border: 0;
+    background-color: inherit;
+    position: relative;
+    height: 24px;
+    padding-left: 26px;
+    color: black;
+}
+
+
+
+
+@media (min-width: 250px) {
+    .header__title_swiper {
+        width: 250px;
+    }
+    .sw_arrow1 {
+        display: none;
+    }
+    .swiper_button-1 {
+        display: none;
+    }
+   
+
+}
+
+@media (min-width: 768px) {
+    h2 {
+        width: auto;
+    }
+    .sw_arrow1 {
+        display: block;
+    }
+    .slider-container {
+        margin: 0 auto;
+
+    }
+    .card {
+        display: block;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        margin-left: 2px;
+        margin-top: 2px;
+        width: 224px;
+        height: 72px;
+    }
+    .card__link {
+        width: 224px;
+    }
+    .card__link::after {
+        content: '';
+        background-position: 174px 50%;
+        width: 224px;
+    }
+    .swiper-pagination {
+        opacity: 0; 
+        display: none;    }
+    .swiper {
+        width: 754px;
+
+    }
+
+	.swiper-wrapper-1 {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        width: 754px;
+        height: 170px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .swiper-wrapper-open {
+        height: auto;
+    }
+
+    .swiper_button-1 {
+        display: block;
+    }}
+
+
+@media (min-width: 1120px) {
+    .card {
+        display: block;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        width: 240px;
+        height: 72px;
+    }
+    .card__link::after {
+        background-position: 184px 50%;
+        width: 240px;
+    }
+    .swiper {
+        width: auto;
+
+    }
+    .swiper-wrapper-1 {
+        width: auto;
+    }
+}
+
+.swiper-2 {
+    height: 160px;
+    width: 240px;
+    background-color: white;
+}

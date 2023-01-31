@@ -1,0 +1,33 @@
+.footer {
+display: flex;
+gap: 8px;
+justify-content: space-between;
+max-width: 900px;
+margin: 0 auto;
+margin-bottom: 16px;
+p {
+    font-size: 14px;
+    color: #7E7E82;
+    display: block;
+    text-align: center;
+}
+}
+
+@media (min-width: 250px) {
+.footer{
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    p {
+        margin: 0 auto;
+        width: 217px;
+    }
+}}
+@media (min-width: 768px) {
+    .footer{
+    flex-direction: row;
+}
+}
+@media (min-width: 1120px) {
+
+}

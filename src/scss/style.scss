@@ -1,0 +1,54 @@
+@import "_normalize.scss";
+@import "nav.scss";
+@import "main.scss";
+@import "burger-menu.scss";
+@import "swiper-1.scss";
+@import "swiper-2.scss";
+@import "prices.scss";
+@import "footer.scss";
+@import "forms.scss";
+
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakesCondensed-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Medium.ttf");
+  font-weight: medium;
+  font-style: normal;
+}
+html {
+  background-color: #F8F8F8;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+  color: black;
+  background-color: #F8F8F8;
+  font-family: TTLakes;
+  max-width: 1760px;
+  position: relative;
+}
+nav{
+  margin: 0 10px;
+}
+p {
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.blur {
+  filter: blur(16px);
+}

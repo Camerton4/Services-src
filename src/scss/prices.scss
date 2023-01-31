@@ -1,0 +1,99 @@
+.price__title {
+    font-weight: normal;
+    opacity: 0.5;
+    font-size: 14px;
+    display: inline-block;
+
+}
+.price__button {
+    width: 119px;
+    height: 32px;
+    background-color: #FF3E79;
+    border-radius: 16px;
+    color: white;
+    border: 0;
+    white-space: nowrap;
+}
+@media (min-width: 250px){
+.slide3 {
+    width: 260px;
+    height: 200px;
+    background: white;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 8px;
+    padding: 16px 0 0 16px;
+}
+.slide3 h2 {
+    margin: 0;
+}
+.price__button {
+    position: absolute;
+    top: 152px;
+    left: 130px;
+}
+
+.prices__title {
+    display: none;
+}
+
+}
+
+@media (min-width: 768px) {
+    .prices__title {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        max-width: 1000px;
+    }
+    .swiper-flex-3 {
+        width: 704px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-right: 30%;
+    }
+    .slide3 {
+        height: auto;
+        width: auto;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding-bottom: 16px;
+        padding-left: 0;
+    }
+    .slide3::after {
+        content: '';
+        border-bottom: #EAEAEA solid 1px;
+        width: 98%;
+        left: 1%;
+        top: 57px;
+        position: absolute;
+    }
+    .slide3:last-child::after {
+        border: 0;
+    }
+    .price__service {
+        padding-left: 8px;
+    }
+    .price__button {
+        position: static;
+    }
+    .services {
+        display: none;
+    }
+    .cost {
+        display: none;
+    }
+    .date {
+        display: none;
+    }
+    }
+  
+    @media (min-width: 1120px){
+        .swiper-flex-3 {
+            width: 1008px;
+        }
+    }

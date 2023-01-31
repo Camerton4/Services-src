@@ -1,0 +1,134 @@
+.modal__feedback {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    height: 100%;
+    z-index: 9999;
+    transform: translateX(100%);
+}
+.modal__call {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    /* transform: translateX(100%); */
+}
+.red {
+    color: #FF3E79;
+}
+
+.modal__feedback_open{
+    display: block;
+    transform: translateX(0px);
+    transition: 500ms;
+    
+}
+.modal_feedback_close {
+    background: url(../img/burger-close.svg);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    position: relative;
+    top: 24px;
+    left: 16px;
+    margin-bottom: 40px;
+}
+.modal_call_close {
+    background: url(../img/burger-close.svg);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    position: relative;
+    top: 24px;
+    left: 16px;
+    margin-bottom: 40px;
+
+}
+h3 {
+    font-size: 24px;
+}
+h3::before {
+    content: "";
+    border-left: 3px solid #41F6D7;
+    position: absolute;
+    height: 24px;
+    left: 0;
+
+}
+
+
+@media (min-width: 250px) {
+    .modal__call {
+        width: auto;
+        padding-left: 16px;
+        .input {
+            width: 288px;
+            height: 48px;
+            border: 1px solid #EAEAEA;
+            margin-bottom: 16px;
+            }
+            .modal__call_button {
+                position: relative;
+                top: 0px;
+                left: 60%;
+            }
+
+    }
+
+
+    .modal__feedback {
+        width: auto;
+        padding-left: 16px;
+        .input {
+            width: 288px;
+            height: 48px;
+            border: 1px solid #EAEAEA;
+            }
+            .input_text {
+                height: 118px;
+                vertical-align: text-top;
+                }
+                .modal__feedback_button {
+                    position: relative;
+                    top: 0px;
+                    left: 180px;
+                }
+    }
+    
+ }
+
+@media (min-width: 768px) { 
+    .modal__call {
+        width: 440px;
+        .input {
+            width: 376px;
+            
+        }
+        .modal__call_button {
+            left: 280px;
+        }
+    }
+    .modal_call_close {
+        left: -70px;
+    }
+    
+
+    .modal__feedback {
+        width: 440px;
+    .input {
+            width: 376px;
+            
+        }
+        .modal__feedback_button {
+            left: 280px;
+        }
+    }
+    .modal_feedback_close {
+        left: -70px;
+    }
+}
