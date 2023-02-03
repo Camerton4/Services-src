@@ -1,12 +1,19 @@
 @import "_normalize.scss";
-@import "nav.scss";
+
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+
 @import "main.scss";
+@import "nav.scss";
 @import "burger-menu.scss";
+
 @import "swiper-1.scss";
 @import "swiper-2.scss";
 @import "prices.scss";
 @import "footer.scss";
 @import "forms.scss";
+
+
 
 
 @font-face {
@@ -36,7 +43,6 @@ body{
   color: black;
   background-color: #F8F8F8;
   font-family: TTLakes;
-  max-width: 1760px;
   position: relative;
 }
 nav{

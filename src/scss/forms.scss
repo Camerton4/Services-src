@@ -64,7 +64,7 @@ h3::before {
 
 @media (min-width: 250px) {
     .modal__call {
-        width: auto;
+        max-width: 400px;
         padding-left: 16px;
         .input {
             width: 288px;
@@ -82,12 +82,13 @@ h3::before {
 
 
     .modal__feedback {
-        width: auto;
+        max-width: 400px;
         padding-left: 16px;
         .input {
             width: 288px;
             height: 48px;
             border: 1px solid #EAEAEA;
+            margin-bottom: 16px;
             }
             .input_text {
                 height: 118px;
@@ -130,5 +131,18 @@ h3::before {
     }
     .modal_feedback_close {
         left: -70px;
+    }
+}
+
+
+.clone {
+    div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;}
+    .icon {
+        display: block;
+        width: 40px;
+        height: 40px;
     }
 }

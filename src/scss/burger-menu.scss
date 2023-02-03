@@ -134,7 +134,7 @@ transition-duration: 0.5s;
     }
     @media (min-width: 360px) and (max-width: 435px){
         .mobile-menu {
-            width: 100%;
+            max-width: 400px;
         }
     }
 
@@ -148,8 +148,28 @@ transition-duration: 0.5s;
         }
     }
 
+    @media (min-width: 1440px) {
+        body {
+            max-width: 1440px;
+        }
+        .mobile-menu {
+            width: 300px;
+            transform: translateX(-7px);
+            display: block;
+        }
+        .main {
+            padding-left: 170px;
+        }
+        
+        .icon-back {
+            display: none;
+        }
+    }
 
     @media (min-width: 1760px) {
+        body {
+            max-width: 1760px;
+        }
         .menu {
             margin-bottom: 241px;
         }
@@ -157,10 +177,15 @@ transition-duration: 0.5s;
             display: none;
         }
         .mobile-menu {
+            width: 320px;
             display: block;
             transform: translateX(0);
             transition: 1.5s;
         }
+        .main {
+            padding-left: 34px;
+        }
+      
 
     }
     .visible {

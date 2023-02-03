@@ -62,6 +62,8 @@
 .swiper-pagination {
     position: static;
     margin-top: 16px;
+    display: block;
+
 }
 .swiper-pagination-bullet {
     background-color: #B5B6BC;
@@ -119,7 +121,7 @@
     position: relative;
     height: 24px;
     padding-left: 26px;
-    color: black;
+    
 }
 
 

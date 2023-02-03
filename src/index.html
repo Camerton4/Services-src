@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  />
+
     <title>Document</title>
 </head>
 <body>
+
+ <!--  mobile-menu -->
+
     <aside class="mobile-menu">
 
         <header class="menu-header">
@@ -32,9 +32,9 @@
         </ul>
 
         <div class="contacts">
-            <a class="icon phone" href="#"></a>
-            <a class="icon message" href="#"></a>
-            <a class="icon profile" href="#"></a>
+            <div class="clone">
+
+            </div>
             <a class="email" href="mailto: mail@cps.com">mail@cps.com</a>
             <a class="tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
             <div class="lung">
@@ -47,46 +47,26 @@
 
     <div class="container">
     <header>
+
+      <!-- NAV -->
+
             <nav class="navigation">
 
                     <a class="logo" href="#">
                     
                     </a>
                     <button class="navigation__burger icon">
-                      <aside class="mobile-menu">
-
-        <header>
-            <a class="icon-back icon" href="#"></a>
-            <a class="logo" href="#"></a>
-            <a class="search-icon icon" href="#"></a>
-        </header>
-
-        <ul class="menu">
-<li class="menu__item"><a href="#">Ремонт техники </a></li>
-<li class="menu__item"><a href="#">Услуги и сервисы </a></li>
-<li class="menu__item"><a href="#">Корпоративным клиентам </a></li>
-<li class="menu__item"><a href="#">Продавцам техники </a></li>
-<li class="menu__item"><a href="#">Партнерам </a></li>
-<li class="menu__item"><a href="#">Производителям </a></li>
-<li class="menu__item"><a href="#">Наши сервисные центры </a></li>
-<li class="menu__item"><a href="#">Контакты </a></li>
-        </ul>
-
+                      
         <div class="contacts">
+          <div class="parent">
             <a class="icon phone" href="#"></a>
             <a class="icon message" href="#"></a>
             <a class="icon profile" href="#"></a>
-            <a class="email" href="mailto: mail@cps.com">mail@cps.com</a>
-            <a class="tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
-            <div class="lung">
-                <a href="#">RU</a><a href="#">EN</a><a href="#">CH</a>
-            </div>
-            
+          </div>
         </div>
-
-    </aside>
+ 
                     </button>
-                        <a class="navigation__call-icon icon" icon href="#"></a>
+                        <a class="navigation__call-icon icon" href="#"></a>
                         <a class="navigation__chat-icon icon" href="#"></a>
                         <a class="navigation__profile-icon icon" href="#"></a>
               
@@ -311,20 +291,19 @@
       <button class="modal_feedback_close"></button>
       <h3>Обратная связь</h3>
       <form class="modal__feedback_forms" action="/action_page.php">
-        <br>
-        <input class="input" type="text" name="name" value="Имя">
-        <br>
-        <br>
-        <input class="input" type="tel" name="phone" value="Телефон">
-        <br><br>
-        <input class="input" type="email" name="mail" value="Электронная почта">
-        <br><br>
+      
+        <input class="input" type="text" name="name" placeholder="Имя" required>
+        
+        <input class="input" type="tel" name="phone" placeholder="Телефон" required>
+       
+        <input class="input" type="email" name="mail" placeholder="Электронная почта" required>
+       
 
-        <textarea class="input input_text" name="text">Сообщение</textarea>
+        <textarea class="input input_text" name="text" placeholder="Сообщение"></textarea>
 
-        <br><br>
+     
         <p>Нажимая “отправить”, <span class="red">вы даете согласие на обработку персональных данных</span> и соглашаетесь с нашей <span class="red">политикой конфиденциальности</span></p>
-        <input class="price__button modal__feedback_button" type="submit" value="Отправить &nbsp; &gt;">
+        <input class="price__button modal__feedback_button" type="submit" placeholder="Отправить &nbsp; &gt;">
       </form> 
 
     </section>
@@ -334,7 +313,7 @@
       <h3>Заказать звонок</h3>
       <form>
 
-        <input class="input" type="tel" name="phone" value="Телефон">
+        <input class="input" type="tel" name="phone" placeholder="Телефон" required>
        
         <p>Нажимая “отправить”, <span class="red">вы даете согласие на обработку персональных данных</span> и соглашаетесь с нашей <span class="red">политикой конфиденциальности</span></p>
         <input class="price__button modal__call_button" type="submit" value="Отправить &nbsp; &gt;">
@@ -343,6 +322,6 @@
 
     </section>
 
- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 </html>

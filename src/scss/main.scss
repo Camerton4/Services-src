@@ -185,7 +185,7 @@ main {
         display: block;
     }
   }
-  @media (min-width: 1760px) {
+  @media (min-width: 1440px) {
     .container {
         max-width: 1120px;
         margin: 0 auto;
@@ -258,9 +258,7 @@ main {
     margin: 0;
    }
   } 
-
-.icon:hover, .icon:focus,
-.price__button:hover, .price__button:focus {
-  transform: scale(1.1);
-  transition: 300ms;
-}
+  .icon:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+  }
