@@ -171,6 +171,7 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 20px;
     }
   
     .image__file {
@@ -179,6 +180,7 @@ main {
     .about {
         justify-content: start;
         align-items: flex-start;
+        
     }
     .about__text {
         height: 6.6em;
@@ -193,6 +195,7 @@ main {
     main {
         margin-top: -88px;
         padding-left: 34px;
+        width: 100%;
     }
     h1{
         margin-bottom: 40px;
@@ -221,7 +224,7 @@ main {
     .about {
         align-items: center;
         width: 650px;
-        height: 28vh;
+        height: 20vh;
     }
    
     .about__text {
@@ -244,7 +247,7 @@ main {
     }
     .image__file {
         width: 531px;
-  
+       
     }
     .about__text {
         margin-right: 24px;

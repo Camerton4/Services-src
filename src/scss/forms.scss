@@ -24,7 +24,7 @@
 
 .modal__feedback_open{
     display: block;
-    transform: translateX(0px);
+    transform: translateX(30px);
     transition: 500ms;
     
 }
@@ -62,9 +62,9 @@ h3::before {
 }
 
 
-@media (min-width: 250px) {
+@media (min-width: 320px) {
     .modal__call {
-        max-width: 400px;
+        max-width: 366px;
         padding-left: 16px;
         .input {
             width: 288px;
@@ -82,7 +82,7 @@ h3::before {
 
 
     .modal__feedback {
-        max-width: 400px;
+        max-width: 366px;
         padding-left: 16px;
         .input {
             width: 288px;
@@ -99,12 +99,21 @@ h3::before {
                     top: 0px;
                     left: 180px;
                 }
+               
     }
-    
+    .modal__feedback_open {
+         
+        transform: translateX(0px);
+
+    }
  }
 
 @media (min-width: 768px) { 
+    .modal__feedback_open {
+        transform: translateX(-10px);}
+
     .modal__call {
+        max-width: 400px;
         width: 440px;
         .input {
             width: 376px;
@@ -120,6 +129,7 @@ h3::before {
     
 
     .modal__feedback {
+        max-width: 400px;
         width: 440px;
     .input {
             width: 376px;
@@ -145,4 +155,8 @@ h3::before {
         width: 40px;
         height: 40px;
     }
+}
+@media (min-width: 1440px) { 
+
+
 }

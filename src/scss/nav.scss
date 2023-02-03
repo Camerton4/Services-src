@@ -26,6 +26,7 @@
     white-space: nowrap;
     vertical-align: middle;
     z-index: 100;
+    overflow: hidden;
   }
   
   .navigation__burger {
@@ -48,6 +49,7 @@
   .navigation__request {
     background: url("../img/repair.svg") no-repeat 0 0;
     position: relative;
+    overflow: visible;
   }
   .navigation__request::before {
     content: "";
@@ -61,6 +63,7 @@
   
   .navigation__status{
     background: url("../img/checkstatus.svg") no-repeat center;
+    overflow: visible;
   }
   .icon > span {
     display: none;
@@ -132,7 +135,8 @@
         .about {
             align-items: center;
             width: 650px;
-            height: 40vh;
+            height: 20vh;
+            
         }
        
         .about__text {

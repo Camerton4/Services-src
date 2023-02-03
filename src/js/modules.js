@@ -2,7 +2,6 @@ const parent = document.querySelector('.parent');
 const clone = parent.cloneNode(true);
 const child = document.querySelector('.clone');
 child.appendChild(clone);
-
 const messageFirst = document.querySelector('.message');
 const messageSecond = document.querySelector('.navigation__chat-icon');
 const messageWindow = document.querySelector('.modal__feedback');
@@ -15,9 +14,14 @@ const phoneFirst = document.querySelector('.phone');
 const phoneSecond = document.querySelector('.navigation__call-icon');
 const phoneWindow = document.querySelector('.modal__call');
 const phoneClose = document.querySelector('.modal_call_close');
-const priceButton = document.querySelector('.price__button');
+const priceButton = document.querySelector('.modal__feedback_button');
+const priceButtonSecond = document.querySelector('.modal__call_button');
 
+priceButtonSecond.addEventListener('click', function(evt){
 
+    evt.preventDefault();
+
+})
 
 priceButton.addEventListener('click', function(evt){
 
